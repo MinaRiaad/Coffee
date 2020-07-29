@@ -1,0 +1,31 @@
+get all machines:
+	http://localhost:8000/api/machines
+
+filteration of coffee machines using query string,you can add any filter you want (waterLine,model,type) as following:
+
+get large machines:
+	http://localhost:8000/api/machines?type=large
+get small machines:
+	http://localhost:8000/api/machines?type=small
+get espresso machines:
+	http://localhost:8000/api/machines?type=espresso
+get large machines with water line
+	http://localhost:8000/api/machines?type=large&waterLine=true
+get small,deluxe machines:
+	http://localhost:8000/api/machines?type=small&model=deluxe
+
+get all pods:
+	http://localhost:8000/api/pods
+
+filteration:
+
+get large pods:
+	http://localhost:8000/api/pods?type=large
+get small,vanilla,3 dozen pods:
+	http://localhost:8000/api/pods?type=small&flavor=vanilla&packageSize=3 dozen
+
+	
+	
+
+
+
